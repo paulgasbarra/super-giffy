@@ -1,0 +1,19 @@
+body {
+  background: #222;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 30px;
+  min-width: 1040px;
+  width: 1040px;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.show {
+  display: block !important;
+}
