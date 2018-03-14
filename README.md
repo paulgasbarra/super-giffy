@@ -1,5 +1,13 @@
 # super-giffy
-A code challenge site that uses the Giffy API to allow you to search for your favorite gifs
+A code challenge site (see challenge below) that uses the Giffy API to allow you to search for your favorite gifs
+
+# start up
+- clone the repo
+- cd into repo directory
+- run `npm install`
+- run `npm run dev`
+- open browser of your choice at web address of `http://localhost:8080/`
+- go gif wild
 
 # The challenge
 Requirements
