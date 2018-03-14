@@ -52,11 +52,13 @@ export default class App extends Component {
     const url = "http://api.giphy.com/v1/gifs/"+ term +"&api_key="+ api_key +"&offset="+offset;
     axios.get(url,   {})
     .then(response => {
+
       this.setState({total_gifs: response.data.pagination.total_count})
       if (search_term === this.state.previous_search_term) {
         const gifArray = this.state.gifs.concat(response.data.data).filter((v, i, a) => a.indexOf(v) === i);
         this.setState({gifs: gifArray})
       } else {
+        this.setState({gifs: []})
         this.setState({gifs: response.data.data})
         this.setState({previous_search_term: search_term})
       }
